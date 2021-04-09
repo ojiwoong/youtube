@@ -30,8 +30,8 @@
         <span class="title">Youtube</span>
       </div>
       <div class="icons">
-        <i class="fab fa-search"></i>
-        <i class="fab fa-ellipsis-v"></i>
+        <button><i class="fas fa-search"></i></button>
+        <button><i class="fas fa-ellipsis-v"></i></button>
       </div>
     </header>
 
@@ -40,90 +40,102 @@
       <video controls src="./video/video.mp4"></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#Oh</li>
-          <li>#Ji</li>
-          <li>#Woong</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title">
-            클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) |
-            프론트엔드 개발자 입문편: HTML, CSS, Javascript
-          </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </div>
-        <div class="views">
-          <span class="views">1M view 1 month ago</span>
-        </div>
-      </div>
-      <!-- Actions -->
-      <div class="actions">
-        <li>
-          <button><i class="fas fa-thumbs-up"></i></button>
-        </li>
-        <li>
-          <button><i class="fas fa-thumbs-down"></i></button>
-        </li>
-        <li>
-          <button><i class="fas fa-share"></i></button>
-        </li>
-        <li>
-          <button><i class="fas fa-plus"></i></button>
-        </li>
-        <li>
-          <button><i class="fab fa-font-awesome-flag"></i></button>
-        </li>
-      </div>
-      <!-- Channel Description -->
-      <div class="channel">
+    <div class="infoAndUpNext">
+      <!-- Video Info -->
+      <section class="info">
         <div class="metadata">
-          <img src="./image/avatar.jpg" alt="" />
-          <div class="info">
-            <span class="name"></span>
-            <span class="subscribers"></span>
+          <ul class="hashtags">
+            <li>#오지웅</li>
+            <li>#프론트엔드</li>
+            <li>#유튜브 클론코딩</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오)
+              | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="views">
+            <span class="views">조회수 : 60,252회 • 2021.4.9.</span>
           </div>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
-    <section class="UpNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="item">
-          <img src="./image/1.png" alt="" />
-          <div class="info">
-            <span class="title">영상 제목</span>
-            <span class="name">유튜버 이름</span>
-            <span class="view">12K views</span>
+        <!-- Actions -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>1.3만</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>534</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>공유</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>저장</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>신고</span>
+            </button>
+          </li>
+        </ul>
+        <!-- Channel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./image/avatar.jpg" alt="" />
+            <div class="info">
+              <span class="name">오지웅</span>
+              <span class="subscribers"> 구독자 8.32만명</span>
+            </div>
           </div>
-          <button class="moreBtn"></button>
-        </li>
-        <li class="item">
-          <img src="./image/1.png" alt="" />
-          <div class="info">
-            <span class="title">영상 제목</span>
-            <span class="name">유튜버 이름</span>
-            <span class="view">12K views</span>
-          </div>
-          <button class="moreBtn"></button>
-        </li>
-        <li class="item">
-          <img src="./image/1.png" alt="" />
-          <div class="info">
-            <span class="title">영상 제목</span>
-            <span class="name">유튜버 이름</span>
-            <span class="view">12K views</span>
-          </div>
-          <button class="moreBtn"></button>
-        </li>
-        <li class="item"></li>
-        <li class="item"></li>
-      </ul>
-    </section>
+          <button class="subscribe">구독</button>
+        </div>
+      </section>
+      <section class="upNext">
+        <span class="title">영상목록</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img src="./image/1.png" alt="" />
+            </div>
+            <div class="info">
+              <span class="title">HTML 강의</span>
+              <span class="name">오지웅</span>
+              <span class="views">조회수 : 1.2만 • 1달전</span>
+            </div>
+            <button class="moreBtn"></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="./image/1.png" alt="" />
+            </div>
+            <div class="info">
+              <span class="title">CSS 강의</span>
+              <span class="name">오지웅</span>
+              <span class="views">조회수 : 2.4만 • 2주전</span>
+            </div>
+            <button class="moreBtn"></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="./image/1.png" alt="" />
+            </div>
+            <div class="info">
+              <span class="title">JavaScript 강의</span>
+              <span class="name">오지웅</span>
+              <span class="views">조회수 : 5.2만 • 1주전</span>
+            </div>
+            <button class="moreBtn"></button>
+          </li>
+          <li class="item"></li>
+          <li class="item"></li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
